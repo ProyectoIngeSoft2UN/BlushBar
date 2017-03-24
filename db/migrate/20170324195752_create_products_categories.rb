@@ -1,8 +1,8 @@
 class CreateProductsCategories < ActiveRecord::Migration[5.0]
   def change
     create_table :products_categories do |t|
-      t.string :product_id
-      t.string :category_id
+      t.references :product
+      t.references :category
 
       t.timestamps
     end
