@@ -1,7 +1,6 @@
 class CreatePurchases < ActiveRecord::Migration[5.0]
   def change
     create_table :purchases do |t|
-      t.string :id
       t.integer :idProduct
       t.integer :cost
       t.string :payment
